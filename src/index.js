@@ -5,8 +5,8 @@ const result = document.querySelector(".advice");
 
 randomAdvice.addEventListener("click", () => {
   getAdvice().then(data => {
-    console.log(data);
-    const randomAdvice = JSON.stringify(data[0].advice);
+    console.log(data.slip.advice);
+    const randomAdvice = data.slip.advice;
     result.innerHTML = randomAdvice;
   });
 });

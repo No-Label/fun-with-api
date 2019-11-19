@@ -3,3 +3,4 @@ export async function getAdvice() {
   const data = await response.json();
   return data;
 }
+
